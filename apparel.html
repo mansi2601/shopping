@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <style>
+        *{
+            margin-left: 0%;
+            margin-right: 0%;
+    
+        }
+        .one{
+            display:flex;
+            justify-content: space-between;
+            background-image:url("R.jpg");
+            height:200px;
+        }
+        .links{
+            display:flex;
+            justify-content: space-between;
+            list-style: none;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .links li{
+            margin-top:8%;
+            margin-left:80px;
+            
+        }
+        a{
+            text-decoration:solid;
+            
+        }
+        .logo{
+           font-family:cursive;
+           color:chartreuse;
+        }
+        .slogan{
+            font-family:fantasy;
+            animation-name: ani;
+            animation-duration: 10s;
+            animation-iteration-count:infinite;
+            overflow-y: auto;
+        }
+
+        @keyframes ani{
+            from{margin-left:0px; color:blueviolet}
+            to{margin-left:1100px; color:gray;}
+        }
+        .para{
+            font-family: cursive;
+            font-weight:400;
+            color:blue;
+        }
+        h3{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:brown;
+            font-size:30px;
+        }
+        .def{
+            display:flex;
+            justify-content: space-between;
+            background-image:url("11.jpg") ;
+            
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px 4px 10px 10px;
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+        
+        .five{
+            animation-name:h;
+            animation-duration: 10s;
+            animation-iteration-count: 20;
+        }
+        @keyframes h{
+            from{ color: pink; }
+            to{ color:indigo;}
+        }
+        .six{
+            animation-name:hh;
+            animation-duration: 10s;
+            animation-iteration-count: 20;
+        }
+        @keyframes hh{
+            from{color:teal;}
+            to{color:darkslateblue;}
+        }
+        .contact1{
+            display:flex;
+            flex-direction: column;
+            margin-left:500px;
+            margin-right:500px;
+            margin-top:20px;
+        } 
+        h4{
+            text-align: center;
+        }  
+        button,.contact1 input{
+            margin-top:15px;
+            border-radius: 0.5em;
+            height:30px;
+        }
+        .contact1 textarea{
+            margin-top:15px;
+            border-radius: 0.5em;
+
+        }
+        #contact{
+            color:beige;
+            background-color: darkslategray;
+            padding-top: 20px;
+            padding-bottom:100px;
+        }
+        .btncon{
+            align-items: center;
+            width:60px;
+            margin-left:40%;
+        }
+        .hidden{
+            display:none;
+        }
+        .three{
+            background-image: url("back.jpeg");
+            margin-top: 0px;
+        }
+        .para{
+            animation: demo;
+            animation-duration: 5s;
+            margin-top: 20px;
+        }
+
+        @keyframes demo{
+            from{transform: translate(5px);}
+            to{transform:translateY(-20px);}
+
+        }
+        .me{
+            animation:bb;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+            font-size: 30px;
+        }
+        @keyframes bb{
+            from {
+                transform:translateX(0px) translateY(10px);}
+                to{transform:translateX(200px) translateY(120px);}
+            }
+        .xy{
+            background-color:aquamarine;
+            margin-top: 0px;
+            padding: 0%;
+            text-align:center ;
+        }
+        .jj{
+            text-align: center;
+            font-family: fantasy;
+            color: blueviolet;
+        }
+        .eight{
+            animation: cc;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cc{
+            from {
+                transform: translateX(0px);}
+                to{transform:translateX(1200px);}
+            }
+        .nine{
+            color:blue;
+            font-family: cursive;
+            background-color: blanchedalmond;
+        }
+        .mm {
+            color:chocolate;
+            animation: do;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes do{
+            from{transform: translate(5px);}
+            to{transform:translateY(-10px);}
+
+        }
+        .lol{
+            margin-left:100px;
+            text-align: center;
+        }
+        .btncon{
+            color: bisque;
+            background-color: brown;
+        }   
+           </style>
+</head>
+<body>
+    <nav>
+        <div class="one">
+            <div class="logo">
+                <h2 class="me">YOUR WARDROBE</h2>
+            </div>
+            <div class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#feedback">Gratitude</a></li>
+            </div>
+        </div>
+    </nav>
+    <p class="slogan"> Fashion ~ An inseperable part of our lives!!!</p>
+    <section class="three" id ="home">
+        
+        <h3>HOME</h3>
+        
+        <p class="para">They say we usually judge strangers by the clothe they wear, because its the only thing we know about them.
+            Fashion has to reflect who you are. It is a language. It is a style of life. Fashion is freedom, which 
+            is nothing but a choice. It is nothing without people. Fashion Meets Friends. Fashion meets soul.
+            Comfort is related to various perceptions, physiological, social, and psychological needs, and after food, it is clothing that satisfies these comfort needs.
+            Clothing provides aesthetic, tactile, thermal, moisture, and pressure comfort.
+        </p>
+    </section>
+    <section class="four" id="about">
+        <div class="xy" id="xy"><h3>About </h3>
+        <p class="hed"> So, Here I present <b>YOUR WARDROBE</b> Go and get comfy and trendy clothes which will define your personality....</p>
+        </div>
+        <p class="jj">Click on the below  pictures to directly go through your favourite categories to shop</p>
+        <div class="def"><a href="#women"> <img src="svm.jpg"></a>
+    
+        <a href=#men><img src="sm.jpg"></a>
+        <a href="#winter"><img src="head.jpg"></a>
+        <a href="#winterm"><img src="headdd.jpg"></a>
+        </div>
+        
+    </section>
+    <section class="women"id="women">
+        <h4 class="mm">Directly click on the one's you like and you will get the details about them!!!</h4>
+        <h3> Women Summeryyyy Apparel</h3>
+        
+        <h4 class="five">TOPS AND DRESSES</h4>
+        <div class="row">
+            <div class="item" >
+            <img src="dress6.jpg" id="img1">
+            <span class="caption" ><pre class="hidden" id="cap1">
+            Material:Cotton
+            Size: S,M,L 
+            Price:1000
+            <button id="btn">Buy now</button>
+            </pre>
+        </span>
+        </div>
+        <div class="item" >
+            <img src="top1.jpg" id="img2">
+            <span class="caption" ><pre class="hidden" id="cap2">
+                Material:Linen
+                Size: S,M,L 
+                Price:699
+                <button id="btn1">Buy now</button>
+                </pre>
+            </span>
+            </div>
+            <div class="item" >
+            <img src="dress3.jpg" id="img3">
+            <span class="caption" ><pre class="hidden" id="cap3">
+                Material:Linen
+                Size: S,M,L 
+                Price:799
+                <button id="btn2">Buy now</button>
+                </pre>
+            </span>
+            </div>
+            <div class="item" >
+            <img src="top7.jpg" id="img4">
+            <span class="caption" ><pre class="hidden" id="cap4">
+                Material:Cotton
+                Size: S,M,L 
+                Price:750
+                <button id="btn3">Buy now</button>
+                </pre>
+            </span>
+            </div>
+            <div class="item" id="img5" >
+            <img src="top3.jpg">
+            <span class="caption" ><pre class="hidden" id="cap5">
+                Material:Cotton
+                Size: S,M,L 
+                Price:1199
+                <button id="btn4">Buy now</button>
+                </pre>
+            </span>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section class="men" id="men">
+        <h3> Men Summeryyy Apparel</h3>
+        <h4 class="six">SHIRTS AND T-SHIRTS</h4>
+        <div class="row">
+        <div class="item" id="img6" >
+        <img src="upper2.jpg"><span class="caption" ><pre class="hidden" id="cap6">
+            Material:Cotton
+            Size: S,M,L 
+            Price:1300
+            <button id="btn5">Buy now</button>
+            </pre>
+        </span>
+        </div><div class="item" id="img7" >
+        <img src="tshirt1.jpg"><span class="caption" ><pre class="hidden" id="cap7">
+            Material:Cotton
+            Size: S,M,L 
+            Price:1300
+            <button id="btn6">Buy now</button>
+            </pre>
+        </span>
+        </div>
+        <div class="item" id="img8" >
+        <img src="upper1.jpg"><span class="caption" ><pre class="hidden" id="cap8">
+            Material:Cotton
+            Size: S,M,L 
+            Price:1300
+            <button id="btn7">Buy now</button>
+            </pre>
+        </span>
+        </div><div class="item" id="img9" >
+        <img src="tshirt3.jpg"><span class="caption" ><pre class="hidden" id="cap9">
+            Material:Cotton
+            Size: S,M,L 
+            Price:1300
+            <button id="btn8">Buy now</button>
+            </pre>
+        </span>
+        </div><div class="item" id="img10" >
+        <img src="upper3.jpg"><span class="caption" ><pre class="hidden" id="cap10">
+            Material:Cotton
+            Size: S,M,L 
+            Price:1500
+            <button id="btn9">Buy now</button>
+            </pre>
+        </span>
+        </div>
+        
+        </div>
+
+    </section>
+    <section class="seven" id="winter">
+        <h2 class="eight"> WINTER IS COMINGGGGGG</h2>
+        <h4 class="nine">Fashion is important to women, but don't catch cold...keep yourself warm ...soo buy these</h4>
+        <div class="row">
+            <div class="item" id="img11" >
+            <img src="wint3.jpg"><span class="caption" ><pre class="hidden" id="cap11">
+                Material:Wool
+                Size: S,M,L 
+                Price:3000
+                <button id="btn10">Buy now</button>
+                </pre>
+            </span>
+            </div>
+            <div class="item" id="img12" ><img src="wint7.jpg"><span class="caption" ><pre class="hidden" id="cap12">
+                Material:Wool
+                Size: S,M,L 
+                Price:3400
+                <button id="btn11">Buy now</button>
+                </pre>
+            </span>
+            </div>
+            <div class="item" id="img13">
+            <img src="wint2.jpg"><span class="caption" ><pre class="hidden" id="cap13">
+                Material:Wool
+                Size: S,M,L 
+                Price:3400
+                <button id="btn12">Buy now</button>
+                </pre>
+            </span>
+            </div><div class="item" id="img14">
+            <img src="wint1.jpg"><span class="caption" ><pre class="hidden" id="cap14">
+                Material:Wool
+                Size: S,M,L 
+                Price:3400
+                <button id="btn13">Buy now</button>
+                </pre>
+            </span>
+            </div><div class="item" id="img15">
+            <img src="wint5.jpg"><span class="caption" ><pre class="hidden" id="cap15">
+                Material:Wool
+                Size: S,M,L 
+                Price:3400
+                <button id="btn14">Buy now</button>
+                </pre>
+            </span>
+            </div>
+        </div>
+        <h4 class="six">MEN'S WEAR</h4>
+        <div class="row" id="winterm"><div class="item" id="img16">
+            <img src="winter1.jpg"><span class="caption" ><pre class="hidden" id="cap16">
+                Material:Wool
+                Size: S,M,L 
+                Price:3400
+                <button id="btn15">Buy now</button>
+                </pre>
+            </span>
+            </div><div class="item" id="img17">
+            <img src="winter2.jpg"><span class="caption" ><pre class="hidden" id="cap17">
+                Material:Wool
+                Size: S,M,L 
+                Price:1500
+                <button id="btn16">Buy now</button>
+                </pre>
+            </span>
+            </div><div class="item" id="img18">
+            <img src="winter4.jpg"><span class="caption" ><pre class="hidden" id="cap18">
+                Material:Wool
+                Size: S,M,L 
+                Price:2500
+                <button id="btn17">Buy now</button>
+                </pre>
+            </span>
+        </div><div class="item" id="img19">
+           
+            <img src="winter5.jpg"><span class="caption" ><pre class="hidden" id="cap19">
+                Material:Wool
+                Size: S,M,L 
+                Price:2500
+                <button id="btn18">Buy now</button>
+                </pre>
+            </span>
+        </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        
+        <div class="contact1">
+            <h4>Have any doubts?Contact Us</h4>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id ="email"placeholder="Your Email-Id" required>
+            <input type="number"id="num" placeholder="Your Number" required>
+            <textarea type="text" id="msg" placeholder="Any other queries.. Ping here!!" rows="4"></textarea>
+            <button class="btncon" id="submit">Submit</button>
+
+        </div>
+        
+    </section>
+    <section class="k" id="feedback">
+        <h3 class="lol"> Thank You! For visiting ...Your feedback is really appreciated.</h3>
+        
+    </section>
+    <script>
+        let butt=document.getElementById("btn")
+        butt.onmouseover=()=>{
+            butt.style.backgroundColor="green"
+            
+        }
+        butt.onclick=()=>{
+            alert("You just bought this")
+        }
+        let submit=document.getElementById("submit")
+        submit.onclick=()=>{
+            let name=document.getElementById("name").value
+            let email=document.getElementById("email").value
+            let num=document.getElementById("num").value
+            let msg=document.getElementById("msg").value
+            console.log(name,email,msg,num)
+            alert("Thankyou for contacting us..We hope to clear you doubts" + name)
+        }
+    
+        let img1 =document.getElementById("img1")
+        img1.style.cursor="pointer"
+        img1.onclick=()=>{
+            
+            let img1 =document.getElementById("img1")
+            let cap1=document.getElementById("cap1")
+            cap1.classList.remove("hidden")
+            cap1.classList.add("show")}
+        
+        let img2 =document.getElementById("img2")
+        img2.style.cursor="pointer"
+        img2.onclick=()=>{
+            
+            let img2 =document.getElementById("img2")
+            let cap2=document.getElementById("cap2")
+            cap2.classList.remove("hidden")
+            cap2.classList.add("show")
+        }
+        let btn1=document.getElementById("btn1")
+        btn1.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn1.onmouseover=()=>{
+            btn1.style.backgroundColor="green"
+        }
+        let img3 =document.getElementById("img3")
+        img3.style.cursor="pointer"
+        img3.onclick=()=>{
+            
+            let img3 =document.getElementById("img3")
+            let cap3=document.getElementById("cap3")
+            cap3.classList.remove("hidden")
+            cap3.classList.add("show")
+        }
+        let btn2=document.getElementById("btn2")
+        btn2.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn2.onmouseover=()=>{
+            btn2.style.backgroundColor="green"
+        }
+        let img4 =document.getElementById("img4")
+        img4.style.cursor="pointer"
+        img4.onclick=()=>{
+            
+            let img4 =document.getElementById("img4")
+            let cap4=document.getElementById("cap4")
+            cap4.classList.remove("hidden")
+            cap4.classList.add("show")
+        }
+        let btn3=document.getElementById("btn3")
+        btn3.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn3.onmouseover=()=>{
+            btn3.style.backgroundColor="green"
+        }
+        let img5 =document.getElementById("img5")
+        img5.style.cursor="pointer"
+        img5.onclick=()=>{
+            
+            let img5 =document.getElementById("img5")
+            let cap5=document.getElementById("cap5")
+            cap5.classList.remove("hidden")
+            cap5.classList.add("show")
+        }
+        let btn4=document.getElementById("btn4")
+        btn4.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn4.onmouseover=()=>{
+            btn4.style.backgroundColor="green"
+        }
+        let xy=document.getElementById("xy")
+        xy.onmouseover=()=>{
+            ar=["pink","gray","beige"]
+                
+                for(let i =0;i<3;i++){
+                    setTimeout(()=>{
+                        xy.style.backgroundColor=ar[i] 
+                    },i*1000)
+                    
+                }
+            }
+        let img6 =document.getElementById("img6")
+        img6.style.cursor="pointer"
+        img6.onclick=()=>{
+            
+            let img6 =document.getElementById("img6")
+            let cap6=document.getElementById("cap6")
+            cap6.classList.remove("hidden")
+            cap6.classList.add("show")
+        }
+        let btn5=document.getElementById("btn5")
+        btn5.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn5.onmouseover=()=>{
+            btn5.style.backgroundColor="green"
+        }
+       
+        let img7 =document.getElementById("img7")
+        img7.style.cursor="pointer"
+        img7.onclick=()=>{
+            
+            let img7 =document.getElementById("img7")
+            let cap7=document.getElementById("cap7")
+            cap7.classList.remove("hidden")
+            cap7.classList.add("show")
+        }
+        let btn6=document.getElementById("btn6")
+        btn6.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn6.onmouseover=()=>{
+            btn6.style.backgroundColor="green"
+        }
+        let img8 =document.getElementById("img8")
+        img8.style.cursor="pointer"
+        img8.onclick=()=>{
+            
+            let img8 =document.getElementById("img8")
+            let cap8=document.getElementById("cap8")
+            cap8.classList.remove("hidden")
+            cap8.classList.add("show")
+        }
+        let btn7=document.getElementById("btn7")
+        btn7.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn7.onmouseover=()=>{
+            btn7.style.backgroundColor="green"
+        }
+        let img9 =document.getElementById("img9")
+        img9.style.cursor="pointer"
+        img9.onclick=()=>{
+            
+            let img9 =document.getElementById("img9")
+            let cap9=document.getElementById("cap9")
+            cap9.classList.remove("hidden")
+            cap9.classList.add("show")
+        }
+        let btn8=document.getElementById("btn8")
+        btn8.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn8.onmouseover=()=>{
+            btn8.style.backgroundColor="green"
+        }
+        let img10 =document.getElementById("img10")
+        img10.style.cursor="pointer"
+        img10.onclick=()=>{
+            
+            let img10 =document.getElementById("img10")
+            let cap10=document.getElementById("cap10")
+            cap10.classList.remove("hidden")
+            cap10.classList.add("show")
+        }
+        let btn9=document.getElementById("btn9")
+        btn9.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn9.onmouseover=()=>{
+            btn9.style.backgroundColor="green"
+        }
+        
+        
+        let img11 =document.getElementById("img11")
+        img11.style.cursor="pointer"
+        img11.onclick=()=>{
+            
+            let img11 =document.getElementById("img11")
+            let cap11=document.getElementById("cap11")
+            cap11.classList.remove("hidden")
+            cap11.classList.add("show")
+        }
+        let btn10=document.getElementById("btn10")
+        btn10.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn10.onmouseover=()=>{
+            btn10.style.backgroundColor="green"
+        }
+        let img12 =document.getElementById("img12")
+        img12.style.cursor="pointer"
+        img12.onclick=()=>{
+            
+            let img12 =document.getElementById("img12")
+            let cap12=document.getElementById("cap12")
+            cap12.classList.remove("hidden")
+            cap12.classList.add("show")
+        }
+        let btn11=document.getElementById("btn11")
+        btn11.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn11.onmouseover=()=>{
+            btn11.style.backgroundColor="green"
+        }
+        let img13 =document.getElementById("img13")
+        img13.style.cursor="pointer"
+        img13.onclick=()=>{
+            
+            let img13 =document.getElementById("img13")
+            let cap13=document.getElementById("cap13")
+            cap13.classList.remove("hidden")
+            cap13.classList.add("show")
+        }
+        let btn12=document.getElementById("btn12")
+        btn12.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn12.onmouseover=()=>{
+            btn12.style.backgroundColor="green"
+        }
+        let img14 =document.getElementById("img14")
+        img14.style.cursor="pointer"
+        img14.onclick=()=>{
+            
+            let img14 =document.getElementById("img14")
+            let cap14=document.getElementById("cap14")
+            cap14.classList.remove("hidden")
+            cap14.classList.add("show")
+        }
+        let btn13=document.getElementById("btn11")
+        btn13.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn13.onmouseover=()=>{
+            btn13.style.backgroundColor="green"
+        }
+        let img15=document.getElementById("img15")
+        img15.style.cursor="pointer"
+        img15.onclick=()=>{
+            
+            let img15 =document.getElementById("img15")
+            let cap15=document.getElementById("cap15")
+            cap15.classList.remove("hidden")
+            cap15.classList.add("show")
+        }
+        let btn14=document.getElementById("btn14")
+        btn14.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn14.onmouseover=()=>{
+            btn14.style.backgroundColor="green"
+        }
+        let img16 =document.getElementById("img16")
+        img16.style.cursor="pointer"
+        img16.onclick=()=>{
+            
+            let img16 =document.getElementById("img16")
+            let cap16=document.getElementById("cap16")
+            cap16.classList.remove("hidden")
+            cap16.classList.add("show")
+        }
+        let btn15=document.getElementById("btn15")
+        btn15.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn15.onmouseover=()=>{
+            btn15.style.backgroundColor="green"
+        }
+        let img17 =document.getElementById("img17")
+        img17.style.cursor="pointer"
+        img17.onclick=()=>{
+            
+            let img17 =document.getElementById("img17")
+            let cap17=document.getElementById("cap17")
+            cap17.classList.remove("hidden")
+            cap17.classList.add("show")
+        }
+        let btn16=document.getElementById("btn16")
+        btn16.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn16.onmouseover=()=>{
+            btn16.style.backgroundColor="green"
+        }
+        let img18 =document.getElementById("img18")
+        img18.style.cursor="pointer"
+        img18.onclick=()=>{
+            
+            let img18 =document.getElementById("img18")
+            let cap18=document.getElementById("cap18")
+            cap18.classList.remove("hidden")
+            cap18.classList.add("show")
+        }
+        let btn17=document.getElementById("btn17")
+        btn17.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn17.onmouseover=()=>{
+            btn16.style.backgroundColor="green"
+        }     
+        let img19 =document.getElementById("img19")
+        img19.style.cursor="pointer"
+        img19.onclick=()=>{
+            
+            let img19 =document.getElementById("img19")
+            let cap19=document.getElementById("cap19")
+            cap19.classList.remove("hidden")
+            cap19.classList.add("show")
+        }
+        let btn18=document.getElementById("btn18")
+        btn18.onclick=()=>{
+            alert("You just bought this")
+        }
+        btn18.onmouseover=()=>{
+            btn18.style.backgroundColor="green"
+        }     
+     </script>
+</body>
+
+</html>
